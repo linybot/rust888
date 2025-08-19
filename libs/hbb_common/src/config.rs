@@ -100,8 +100,8 @@ const CHARS: &[char] = &[
     'm', 'n', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
 ];
 
-pub const RENDEZVOUS_SERVERS: &[&str] = &["linybot.top"];
-pub const RS_PUB_KEY: &str = "SWFEQJB82kMjR8xauUbYo72nnoLIlmVt661YfpDO2Nw=";
+pub const RENDEZVOUS_SERVERS: &[&str] = &["10.22.11.52"];
+pub const RS_PUB_KEY: &str = "bVf8e2ZJkZAVkPvnBvzs3E74VTpwPBP6gcmDtx8mF0Q=";
 
 pub const RENDEZVOUS_PORT: i32 = 21116;
 pub const RELAY_PORT: i32 = 21117;
