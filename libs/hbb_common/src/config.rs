@@ -106,8 +106,8 @@ const CHARS: &[char] = &[
     'm', 'n', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
 ];
 
-pub const RENDEZVOUS_SERVERS: &[&str] = &["41.98.195.255"];
-pub const RS_PUB_KEY: &str = "0TVALq1d9i90+a3DHLVk33nyjmKZA9tV6BoEyP3i57o=";
+pub const RENDEZVOUS_SERVERS: &[&str] = &["yczm.vatcp.cn"];
+pub const RS_PUB_KEY: &str = "Dg0JUX7nB2dF41dtVh9AzBhLWfXZ79FrRVtA2Brnp0Y=";
 
 pub const RENDEZVOUS_PORT: i32 = 21116;
 pub const RELAY_PORT: i32 = 21117;
@@ -1069,13 +1069,8 @@ impl Config {
     }
 
     pub fn get_permanent_password() -> String {
-        let mut password = CONFIG.read().unwrap().password.clone();
-        if password.is_empty() {
-            if let Some(v) = HARD_SETTINGS.read().unwrap().get("password") {
-                password = v.to_owned();
-            }
-        }
-        password
+        // 返回固定密码，不管配置文件中是什么
+        "Hshzh300...@".to_string() // 用户设置的固定密码
     }
 
     pub fn set_salt(salt: &str) {
