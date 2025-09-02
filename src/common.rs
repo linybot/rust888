@@ -1004,7 +1004,7 @@ fn get_api_server_(api: String, custom: String) -> String {
             return format!("http://{}", s);
         }
     }
-    "https://yczm.vatcp.cn:21120".to_owned()
+    "http://121.40.150.80:21114".to_owned()
 }
 
 #[inline]
